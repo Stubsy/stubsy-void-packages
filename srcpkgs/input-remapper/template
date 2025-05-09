@@ -22,3 +22,8 @@ do_build() {
 do_install() {
   	python setup.py install --root "${PKGDESTDIR}"
 }
+
+#TODO: this file needs to be created to support runit
+##!/bin/sh
+#sv check dbus > /dev/null || exit 1
+#exec /usr/bin/input-remapper-service > /dev/null 2>&1
