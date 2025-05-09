@@ -1,0 +1,24 @@
+# Template file for 'input-remapper'
+pkgname=input-remapper
+version=2.1.1
+revision=1
+build_style=python3-module
+pycompile_module="input-remapper"
+python_version=3
+hostmakedepends="python3-setuptools gettext"
+depends="python3-setuptools python3-devel python3-evdev python3-pydantic python3-pydbus python3-psutil python3-gobject gtksourceview4 gettext"
+short_desc="An easy to use tool for Linux to change the behaviour of your input devices"
+maintainer="Stubsy <Stubsy@heimsvik.no>"
+license="MIT"
+homepage="https://github.com/sezanzeb/input-remapper"
+distfiles="https://github.com/sezanzeb/input-remapper/archive/refs/tags/${version}.tar.gz"
+checksum=060c919d0a3e9257d93595aa06826db1952991916f982bae78e72fb7cacf4297
+
+
+do_build() {
+	python setup.py build
+}
+
+do_install() {
+  	python setup.py install --root "${PKGDESTDIR}"
+}

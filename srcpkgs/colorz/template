@@ -1,0 +1,19 @@
+# Template file for 'colorz'
+pkgname=colorz
+version=1.0.3
+revision=1
+build_style=python3-module
+pycompile_module="colorz"
+python_version=3
+hostmakedepends="python3-setuptools"
+depends="python3-setuptools python3-Pillow python3-scipy"
+short_desc="k-means color scheme generator"
+maintainer="Stubsy <Stubsy@heimsvik.no>"
+license="MIT"
+homepage="https://github.com/metakirby5/colorz"
+distfiles="https://github.com/metakirby5/colorz/archive/refs/heads/master.tar.gz"
+checksum=33babdfac09c3a0b5fdbca724589d583d52d6ce716cac2444006cb43af961faa
+
+do_install() {
+  	python setup.py install --root "${PKGDESTDIR}"
+}

@@ -1,0 +1,14 @@
+# Template file for 'haishoku'
+pkgname=haishoku
+version=1.1.8
+revision=1
+build_style=python3-module
+pycompile_module="haishoku"
+hostmakedepends="python3-setuptools"
+depends="python3-setuptools python3-Pillow"
+short_desc="Development tool for grabbing the dominant color or representative color palette from an image"
+maintainer="Stubsy <Stubsy@heimsvik.no>"
+license="MIT"
+homepage="https://github.com/LanceGin/haishoku"
+distfiles="https://github.com/LanceGin/haishoku/archive/v${version}.tar.gz"
+checksum=9d827e2e3805831e1810e6a4249f9041da1b7d07f67cd82a9efbb11a55988cf6                   

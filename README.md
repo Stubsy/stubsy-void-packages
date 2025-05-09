@@ -1,6 +1,6 @@
 # stubsy-void-packages
 
-My own package templates for what doesn't meet the void-packages requirements.
+My own package templates that doesn't meet the void-packages requirements or haven't been contributed yet.
 
 I use symlinks to void-packages/srcpkgs so they are all available in the same place:
 
